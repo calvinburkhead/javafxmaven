@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nwmsrocks.javafxmaven.UploaderController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Slider fx:id="sliderToy" layoutX="154.0" layoutY="123.0" />
+                  <ToggleButton fx:id="buttonToggle" layoutX="27.0" layoutY="118.0" mnemonicParsing="false" onAction="#buttonToggleAction" text="ToggleButton" />
+                  <ProgressIndicator fx:id="progressToy" layoutX="294.0" layoutY="108.0" progress="0.0" />
+                  <Label fx:id="labelToggle" layoutX="62.0" layoutY="172.0" text="Label" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <HBox mouseTransparent="true" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="500.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@header-icon_s3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="454.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Logo-1-White.png" />
+               </image></ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</AnchorPane>
