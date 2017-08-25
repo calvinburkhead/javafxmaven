@@ -20,7 +20,7 @@ public class UploaderController {
 	@FXML
 	private ProgressIndicator progressToy;
 	
-	// Public no-args constructor requested for FXML to instantiate
+	// Public no-args constructor required for FXML to instantiate
 	public UploaderController()
 	{
 
